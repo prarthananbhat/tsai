@@ -1,0 +1,70 @@
+Approach for Assignement 5
+#--------------------------#
+
+Step 1:
+#-----------------------------------------------------------------------------------------------#
+Objective of the notbook.
+1. Getting the skeleton right.
+2. unction for train and test losses
+3. Train and Test Loaders and transforms
+
+Output
+*   Model Parameters: 195,352
+*   Best Train Accuracy: 99.31%
+*   Best Test Accuracy: 98.87%
+
+
+Step 2:
+#-----------------------------------------------------------------------------------------------#
+Objective of the notbook.
+1. Reducing the number of Parameters.<10K
+
+Output
+*   Model Parameters: 8,116
+*   Best Train Accuracy: 99.19%
+*   Best Test Accuracy: 98.33%
+
+What can be improved?
+Adding batch normalization: improves the accuracy
+Adding Drop Out: reduces the gap between test and train losses
+
+
+Step 3
+#-----------------------------------------------------------------------------------------------#
+Objective of the notbook.
+1. Added Batch Normalization and Relu
+2. Model is Underfitting!
+
+Output
+*   Model Parameters: 8,268
+*   Best Train Accuracy: 94.22%
+*   Best Test Accuracy: 99.01%
+
+What can be improved?
+We can Add GAP at the end and reduce and increase the capacity in other parts of the model
+
+
+Step 4
+#-----------------------------------------------------------------------------------------------#
+Objective of the notbook.
+1. Added Average Pooling
+2. Model is still Underfitting!
+
+Output
+*   Model Parameters: 9,892
+*   Best Train Accuracy: 98.02%
+*   Best Test Accuracy: 99.31%
+
+What can be improved?
+Augmentation might help
+
+Step 5
+#-----------------------------------------------------------------------------------------------#
+Objective of the notbook.
+1. Random Rotation Applied
+2. Model is still Underfitting!
+
+Output
+*   Model Parameters: 8,144
+*   Best Train Accuracy: 98.41%
+*   Best Test Accuracy: 99.37%

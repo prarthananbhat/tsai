@@ -1,0 +1,137 @@
+{
+  "_via_settings": {
+    "ui": {
+      "annotation_editor_height": 25,
+      "annotation_editor_fontsize": 0.8,
+      "leftsidebar_width": 18,
+      "image_grid": {
+        "img_height": 80,
+        "rshape_fill": "none",
+        "rshape_fill_opacity": 0.3,
+        "rshape_stroke": "yellow",
+        "rshape_stroke_width": 2,
+        "show_region_shape": true,
+        "show_image_policy": "all"
+      },
+      "image": {
+        "region_label": "__via_region_id__",
+        "region_color": "__via_default_region_color__",
+        "region_label_font": "10px Sans",
+        "on_image_annotation_editor_placement": "NEAR_REGION"
+      }
+    },
+    "core": {
+      "buffer_size": 18,
+      "filepath": {},
+      "default_filepath": ""
+    },
+    "project": {
+      "name": "tsai_annotations" #"Name of the Project"
+    }
+  },
+  "_via_img_metadata": {
+    "dog_10.jpg11493": {
+      "filename": "dog_10.jpg", $file name which was uploaded
+      "size": 11493,
+      "regions": [
+        {
+          "shape_attributes": {
+            "name": "rect",
+            "x": 26, #x cordinate for the top left corener of the box1 pointing human
+            "y": 13,#y cordinate for the top left corener of the box1 pointing human
+            "width": 89, width of the box around the human
+            "height": 215, height of the box around the human
+          },
+          "region_attributes": { #Selected attribute type is human and name given is boy
+            "name": "Boy",
+            "type": "human",
+            "image_quality": {#image quality set to true frontal and good illumination
+              "good": true,
+              "frontal": true
+            }
+          }
+        },
+        {
+          "shape_attributes": {
+            "name": "rect",
+            "x": 96, #x cordinate for the top left corener of the box1 pointing dog
+            "y": 88, #y cordinate for the top left corener of the box1 pointing dog
+            "width": 66, width of the box around the dog
+            "height": 116 height of the box around the dog
+          },
+          "region_attributes": { #Selected attribute type is human and name given is dog
+            "name": "dog",
+            "type": "dog",
+            "image_quality": {
+              "good": true,  #image quality set to true frontal and good illumination
+              "frontal": true
+            }
+          }
+        }
+      ],
+      "file_attributes": {
+        "caption": "",
+        "public_domain": "no",
+        "image_url": ""
+      }
+    }
+  },
+  "_via_attributes": {
+    "region": {
+      "name": { #attribute to specify the name
+        "type": "text", #Name to be inserted in text format
+        "description": "Name of the object",#Description
+        "default_value": "not_defined" #place holder for default name
+      },
+      "type": {
+        "type": "dropdown", #type of objject to be selected from drop downlist
+        "description": "Category of object",
+        "options": { #two options specified by us which need to be tagged
+          "human": "Human",
+          "dog": "Dog"
+        },
+        "default_options": {
+          "dog": true
+        }
+      },
+      "image_quality": { #four features specified in image quality
+        "type": "checkbox",
+        "description": "Quality of image region",
+        "options": {
+          "blur": "Blurred region",
+          "good_illumination": "Good Illumination",
+          "frontal": "Object in Frontal View",
+          "side": "Side View"
+        },
+        "default_options": { #default options image quality attribute
+          "good": true,
+          "frontal": true,
+          "good_illumination": true
+        }
+      }
+    },
+    "file": {
+      "caption": {
+        "type": "text",
+        "description": "",
+        "default_value": ""
+      },
+      "public_domain": {
+        "type": "radio",
+        "description": "",
+        "options": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "default_options": {
+          "no": true
+        }
+      },
+      "image_url": {
+        "type": "text",
+        "description": "",
+        "default_value": ""
+      }
+    }
+  }
+}

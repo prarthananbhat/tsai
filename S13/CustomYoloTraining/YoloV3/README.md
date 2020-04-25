@@ -87,6 +87,9 @@ Hat
 
 **Results**
 After training for 300 Epochs, results look awesome!
+
+Youtube Link [https://www.youtube.com/watch?v=FrYggzp6VuY]
+
 ![alt text](https://github.com/prarthananbhat/tsai/blob/master/S13/CustomYoloTraining/YoloV3/output/image-000795.jpg?raw=true)
 ![alt text](https://github.com/prarthananbhat/tsai/blob/master/S13/CustomYoloTraining/YoloV3/output/image-000500.jpg?raw=true)
 ![alt text](https://github.com/prarthananbhat/tsai/blob/master/S13/CustomYoloTraining/YoloV3/output/image-000580.jpg?raw=true)

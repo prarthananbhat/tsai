@@ -76,13 +76,14 @@ Hat
 **Step 5: Training**
 
    1. Run this command `python train.py --data data/customdata/custom.data --batch 10 --cache --cfg cfg/yolov3-custom.cfg --epochs 3 --nosave`
+   refer the notebook [https://github.com/prarthananbhat/tsai/blob/master/S13/CustomYoloTraining/yolo_custom_training.ipynb]
 
 **Step 6: Detection**
 
    1. Create the custom_detect dirctory similar to customdata
-   2. Place the images on which you want to detect the objects in the images folder. In the above example i have placed the frames from a video(link)
+   2. Place the images on which you want to detect the objects in the images folder. In the above example i have placed the frames from a video(Video - [https://youtu.be/IP11jDHwX98])
    3. use the ffmpeg command to create the frames from the video.
-   4. run this command python detect.py
+   4. run this command python detect.py or refer the notebook [https://github.com/prarthananbhat/tsai/blob/master/S13/CustomYoloTraining/yolo_custom_detect.ipynb]
 
 **Results**
 After training for 300 Epochs, results look awesome!

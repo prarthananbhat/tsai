@@ -8,13 +8,22 @@ class AlbumentationTransforms:
     """
     Helper class to create test and train transforms using Albumentations
     """
-    def __init__(self, transforms_list=[]):
-        transforms_list.append(AP.ToTensor())
-        self.transforms = A.Compose(transforms_list)
+    def __init__(self, img_transforms_list=[], bg_transforms_list=[], target_transforms_list = []):
+        img_transforms_list.append(AP.ToTensor())
+        bg_transforms_list.append(AP.ToTensor())
+        target_transforms_list.append(AP.ToTensor())
+        self.img_transforms = A.Compose(img_transforms_list)
+        self.bg_transforms = A.Compose(bg_transforms_list)
+        self.target_transforms = A.Compose(target_transforms_list)
 
-    def __call__(self, img):
+    def __call__(self, sample_batch):
+        img = sample_batch['image']
+        bg_img = sample_batch['bg_image']
+        target_img = sample_batch['target_image']
         img = np.array(img)
-        return self.transforms(image=img)['image']
+        bg_img = np.array(bg_img)
+        target_img = np.array(target_img)
+        return self.img_transforms(image=img)['image'], self.target_transforms(img = target_img)['target_image']
 
 
 class Transforms:

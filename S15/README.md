@@ -1,7 +1,7 @@
 ### S15 Assignment Background subtraction
-Objective: Predict forground masks
+#### Objective: Predict forground masks
 
-General Idea:
+**General Idea:**
 If we need to predict the foreground masks we need to remove the back ground from the image.
 In our example the background is a sea shore and the foreground is boat.
 The foreground mask will have 0's in the location where the boat is present and rest of the pixels will be black
@@ -11,13 +11,18 @@ In the previous assignment we have prepared the dataset for the same.
 	2. Background_foreground images
 	3. Foreground masks
 
-How does the data Look?
+**How does the data Look?**
 background : 128 X 128 X3
 background_with_object : 128 X 128 X 3
 target_mask : 128 X 128
 
-Training Samples
+Training Samples after Transformations
+
 ![Traning Samples](https://github.com/prarthananbhat/tsai/blob/master/S15/images/images_from_test.png?raw=true)
+
+Validation Samples after Transformations
+![alt text](https://github.com/prarthananbhat/tsai/blob/master/S15/images/images_from_test.png?raw=true)
+
 
 Basic Idea for the Model
 We are expecting a 128 X 128 as output from the model and we have to input two images to the model of sixe 128 X 128 X 3reach

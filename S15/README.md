@@ -11,10 +11,13 @@ In the previous assignment we have prepared the dataset for the same.
 	2. Background_foreground images
 	3. Foreground masks
 
-How does the data Look
+How does the data Look?
 background : 128 X 128 X3
 background_with_object : 128 X 128 X 3
 target_mask : 128 X 128
+
+Training Samples
+![Traning Samples](https://github.com/prarthananbhat/tsai/blob/master/S15/images/images_from_test.png?raw=true)
 
 Basic Idea for the Model
 We are expecting a 128 X 128 as output from the model and we have to input two images to the model of sixe 128 X 128 X 3reach

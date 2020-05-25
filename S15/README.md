@@ -8,9 +8,9 @@ The foreground mask will have 0's in the location where the boat is present and 
 
 In the previous assignment we have prepared the dataset for the same. Let us see how does the data Look?
 
-**1. Background images:** background : 128 X 128 X3
-**2. Background_foreground images:** background_with_object : 128 X 128 X 3
-**3. Foreground masks:** target_mask : 128 X 128
+1. **Background images:** background : 128 X 128 X3
+2. **Background_foreground images:** background_with_object : 128 X 128 X 3
+3. **Foreground masks:** target_mask : 128 X 128
 
 Training Samples after Transformations
 
@@ -41,6 +41,12 @@ We know that our target is also an image which is a so we should use a pixel to 
 	2. Decoder : decoder which has 3 transpose convolution layers followed by a 1 X 1 which resulted in a 128X128 as output to expand the features to a mask
 4. Loss function : MSE Loss
 5. Total Parameters : 830,350
+Please refer the [notebook]() for code
+
+Output from the model after 25 EPochs and Loss Curves are shown below
+
+![alt text](https://github.com/prarthananbhat/tsai/blob/master/S15/images/output_mse_adam_25epochs.png?raw=true)
+![alt text](https://github.com/prarthananbhat/tsai/blob/master/S15/images/loss_curve_mse_adam.png?raw=true)
 
 **Further Work**
 

@@ -42,7 +42,7 @@ We know that our target is also an image which is a so we should use a pixel to 
 4. Loss function : MSE Loss
 5. Total Parameters : 830,350
 
-Please refer the [notebook]() for code
+Please refer the [notebook](https://github.com/prarthananbhat/tsai/blob/master/S15/background_subtraction_approach_1.ipynb) for code
 
 Output from the model after 25 EPochs and Loss Curves are shown below
 

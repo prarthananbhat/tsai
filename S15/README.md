@@ -41,6 +41,7 @@ We know that our target is also an image which is a so we should use a pixel to 
 	2. Decoder : decoder which has 3 transpose convolution layers followed by a 1 X 1 which resulted in a 128X128 as output to expand the features to a mask
 4. Loss function : MSE Loss
 5. Total Parameters : 830,350
+
 Please refer the [notebook]() for code
 
 Output from the model after 25 EPochs and Loss Curves are shown below

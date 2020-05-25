@@ -56,7 +56,7 @@ The above arcihtecture was the initial model and we have to do a few changes bas
 2. Try out other loss functions
 3. RGB Shift transformations to the images
 
-**Approach 2: Using a pretrained RESNET18 **
+**Approach 2: Using a pretrained RESNET18**
 
 1. Input to RESNET is 224 X 224 X 3 but we have an input of 224 X 224 X 6 
 2. Applying a 1 X 1 convolution on the input to reduce the channels to 3
